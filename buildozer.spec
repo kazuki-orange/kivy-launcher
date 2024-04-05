@@ -52,7 +52,7 @@ requirements = python3==3.12.1,kivy==master,hostpython3==3.12.1,android,asynckiv
 #icon.filename = %(source.dir)s/data/icon.png
 
 # (str) Supported orientation (one of landscape, portrait or all)
-orientation = all
+orientation = portrait
 
 # (list) List of service to declare
 #services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
