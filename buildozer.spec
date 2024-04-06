@@ -22,7 +22,7 @@ source.include_exts = py,png,jpg,kv,atlas,ttf
 #source.exclude_exts = spec
 
 # (list) List of directory to exclude (let empty to not exclude anything)
-source.exclude_dirs = tests, bin, art
+source.exclude_dirs = tests, bin, art, .venv, .git
 
 # (list) List of exclusions using pattern matching
 #source.exclude_patterns = license,images/*/*.jpg
@@ -170,7 +170,7 @@ android.manifest.launch_mode = standard
 #android.library_references =
 
 # (str) Android logcat filters to use
-#android.logcat_filters = *:S python:D
+android.logcat_filters = *:S python:D
 
 # (bool) Copy library instead of making a libpymodules.so
 #android.copy_libs = 1
@@ -222,6 +222,7 @@ ACCESS_WIFI_STATE
 BLUETOOTH
 BLUETOOTH_ADMIN
 BROADCAST_STICKY
+CAMERA
 CHANGE_NETWORK_STATE
 CHANGE_WIFI_MULTICAST_STATE
 CHANGE_WIFI_STATE
