@@ -33,7 +33,9 @@ jobs:
 
       - name: Build with Buildozer
         run: |
-          pip3 install --user --upgrade buildozer==1.4 Cython==0.29.33 virtualenv
+          pip3 install --user --upgrade buildozer==1.0 virtualenv
+          sudo apt-get remove --purge cython
+          sudo pip install cython==0.29.33
           export PATH=$PATH:~/.local/bin/
           export APP_ANDROID_ACCEPT_SDK_LICENSE=1 
           export BUILDOZER_WARN_ON_ROOT=0
